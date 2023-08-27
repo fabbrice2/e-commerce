@@ -11,7 +11,7 @@ function Row() {
         <Header/>
         <div className="content_row">
             <h1 className='text-4xl md:text-5xl lg:text-6xl'>Plantes et pots <br/>pour votre maison</h1>
-            <button className='sm:px-12 py-4 px-8 bg-[#A8A6A1] duration-300'><a href="/buypage">Acheter maintenant</a></button>
+            <a href="/buypage"><button className='sm:px-12 py-4 px-8 bg-[#A8A6A1] duration-300'>Acheter maintenant</button></a>
         </div>
         <div className="wrap bg-[#38383B] text-white flex flex-col gap-20 px-12">
           <h1 className='text-center text-4xl md:text-5xl lg:text-6xl mt-[100px]'>Coups de cœur des fans</h1>
@@ -39,13 +39,13 @@ function Row() {
               <img className='max-w-full h-auto object-cover' src="https://images.squarespace-cdn.com/content/v1/62bdd1cc7fc2784fd9195c81/1656607206550-QBJMNDRCJ6IPPXL0WNY6/plant_2_optimized.gif?format=1500w" alt="" />
               <h2 className='text-4xl text-center'>Vous cherchez des fleurs?</h2>
               <p className='text-center text-l'>Les plantes à fleurs sont étonnantes, mais elles ont besoin d’un peu plus d’attention que les autres. Apprenez comment prendre soin d’elles.</p>
-              <button className='sm:px-12 py-4 px-8 bg-white text-[#A8A6A1] duration-300'>En savoir plus</button>
+              <a href="/nopage"><button className='sm:px-12 py-4 px-8 bg-white text-[#A8A6A1] duration-300'>En savoir plus</button></a>
             </li>
             <li className='flex flex-col items-center gap-6 md'>
               <img className='max-w-full h-auto object-cover' src="https://images.squarespace-cdn.com/content/v1/62bdd1cc7fc2784fd9195c81/1656607206567-B3PW8IAG7BZF78B9X0IF/plant_1_optimized.gif?format=1500w" alt="" />
               <h2 className='text-4xl text-center'>Vous cherchez des plantes grasses?</h2>
               <p className='text-center text-l'>Si vous avez un rebord de fenêtre ensoleillé, les succulentes (ou plantes grasses) sont faites pour vous. Elles sont belles, résistantes et faciles d’entretien.</p>
-              <button className='sm:px-12 py-4 px-8 bg-white text-[#A8A6A1] duration-300'>En savoir plus</button>
+              <a href="/nopage"><button className='sm:px-12 py-4 px-8 bg-white text-[#A8A6A1] duration-300'>En savoir plus</button></a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@ function Row() {
             <h1 className='text-center text-xl md:text-2xl lg:text-3xl'>Elles grandissent si vite.</h1>
             <p className='text-center text-l'>Assurez-vous de ne rien rater. Inscrivez-vous pour recevoir les dernières informations.</p>
             <form action="" class="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-1">
-              <input type="email" name="email" id="email" placeholder="Adresse E-mail" class="mb-4 sm:mb-0 sm:mr-4 px-8 py-4 border border-gray-300 focus:outline-none focus:ring focus:border-black transition duration-300 w-[250px] sm:w-[400px]" />
+              <input type="email" name="email" id="email" placeholder="Adresse E-mail" class="mb-4 sm:mb-0 sm:mr-4 px-8 py-4 border border-gray-300 focus:outline-none focus:ring focus:border-black transition duration-300 w-[250px] sm:w-[400px]" required/>
               <button class="px-8 py-4 bg-[#A8A6A1] text-white  focus:outline-none transition duration-300">S'inscrire</button>
             </form>
           </div>
@@ -65,7 +65,7 @@ function Row() {
           <div className="text-white flex flex-col items-start gap-6">
             <h1 className='text-xl md:text-2xl lg:text-3xl'>Offrez de la verdure</h1>
             <p>Les plantes font un cadeau aussi attentionné que les fleurs et durent beaucoup plus longtemps. Avec une carte-cadeau, vous pouvez égayer la maison, le bureau ou la chambre d’une personne qui se fera plaisir avec la plante en pot de son choix. Nous en avons de toutes sortes et nous vous les enverrons gratuitement !</p>
-            <button className="px-8 py-4 bg-white text-[#A8A6A1] hover:text-gray-800  focus:outline-none transition duration-300">Acheter une carte-cadeau</button>
+            <a href="/nopage"><button className="px-8 py-4 bg-white text-[#A8A6A1] hover:text-gray-800  focus:outline-none transition duration-300">Acheter une carte-cadeau</button></a>
           </div>
         </div>
         <Footer/>

@@ -28,7 +28,7 @@ function Footer() {
             </ul>
             <ul className='flex flex-col gap-3'>
                 <a href=""><li className='underline text-[#A8A6A1]'>Journal</li></a>
-                <a href=""><li className='underline text-[#A8A6A1]'>Contact</li></a>
+                <a href=""><li className='underline text]-[#A8A6A1'>Contact</li></a>
             </ul>
         </div>
     </div>

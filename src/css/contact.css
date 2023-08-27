@@ -5,3 +5,9 @@
     background-size: cover;
     width: 100%;
 }
+
+.custom-overlay {
+    background: rgba(0, 0, 0, 0.6) !important; 
+    backdrop-filter: none !important;
+  }
+  
