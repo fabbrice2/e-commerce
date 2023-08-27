@@ -50,7 +50,7 @@ function Header() {
 
   return (
     <div style={{ background: backgroundColor }} className='header flex justify-between duration-300  items-center px-12 fixed w-full text-white'>
-    <div className="iconmenu cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+    <div className="iconmenu cursor-pointer md:hidden flex "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg></div>
       {/* <div className="menumask md:hidden flex flex-col cursor-pointer h-screen bg-[#38383B] ">
