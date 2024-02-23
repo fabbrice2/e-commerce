@@ -38,6 +38,7 @@ function Achat() {
       .then((response) => response.json())
       .then((data) => {
         console.log("successfully", data);
+        alert("Produit ajouté avec success");
         // window.location.href = "/cart";
       })
       .catch((error) => console.error("Error:", error));

@@ -14,28 +14,29 @@ function Cart() {
       .then((data) => setCart(data))
       .catch((error) => console.error("Error:", error));
   }, []);
-  function calculateSum(array, property) {
-    const total = array.reduce((accumulator, object) => {
-      return accumulator + object[property];
-    }, 0);
 
-    return total;
-  }
-
-  const sum = calculateSum(cart, "price");
+  const totalPrice = cart.reduce(
+    (acc, product) => acc + product.price * count,
+    0
+  );
 
   const incrementCount = () => {
     setCount(count + 1);
-    sum();
   };
   const decrementCount = () => {
     if (count === 1) {
       setDisable(true);
     } else {
       setCount(count - 1);
-      sum();
     }
   };
+
+  // function removeProduct() {
+  //   this.parentNode.removeChild(this);
+
+  //   var index = cart.indexOf(this);
+  //   cart.splice(index, 1);
+  // }
 
   return (
     <div className=" bg-[#38383B] text-white">
@@ -95,11 +96,13 @@ function Cart() {
         <div className="flex flex-col gap-5 mt-10 w-80">
           <ul className="flex justify-between">
             <li>Sous-total</li>
-            <li>{sum}</li>
+            <li>{totalPrice.toFixed(2)} €</li>
           </ul>
-          <button className="sm:px-12 py-4 px-8 bg-[#A8A6A1] duration-300 w-full">
-            Paiement
-          </button>
+          <a href="/checkout">
+            <button className="sm:px-12 py-4 px-8 bg-[#A8A6A1] duration-300 w-full">
+              Paiement
+            </button>
+          </a>
         </div>
       </div>
       <Footer />
