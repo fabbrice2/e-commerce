@@ -24,7 +24,7 @@ function Achat() {
   //   console.log(cart);
   // }
   const AddToBasket = () => {
-    fetch("http://localhost:5000/cart", {
+    fetch("https://e-commerce-rcaq.onrender.com/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

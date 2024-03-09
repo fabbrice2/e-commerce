@@ -9,7 +9,7 @@ function Cart() {
   const [disable, setDisable] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/cart")
+    fetch("https://e-commerce-rcaq.onrender.com/cart")
       .then((response) => response.json())
       .then((data) => setCart(data))
       .catch((error) => console.error("Error:", error));
