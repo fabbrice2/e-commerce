@@ -1,0 +1,43 @@
+.row{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/62bdd1cc7fc2784fd9195c81/1656607206331-0GOKX7JYEI4GN6QCY4Q5/Header_02_022-copy.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.content_row{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 15vh;
+    height: 100vh;
+}
+.wrapper{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/62bdd1cc7fc2784fd9195c81/1656607206532-K9HUG95XOVKA87D3ZCL2/Header_04_008-copy.jpg");
+    height: 115vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.newsletter{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/62bdd1cc7fc2784fd9195c81/1656607206604-ZE9579GX2SGN7CFFWIVF/Texture_12_003-1-copy.jpg?format=2500w");
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.backgroundsection{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/62bdd1cc7fc2784fd9195c81/1656607206620-9VCU3NJL981H0O5XAEM2/giftcard-template.jpg?format=1500w");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
