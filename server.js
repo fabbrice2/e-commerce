@@ -2,7 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+const DB_HOST = process.env.DB_HOST || "localhost";
+const DB_USERNAME = process.env.DB_USERNAME || "root";
+const DB_PASSWORD = process.env.DB_PASSWORD || "";
+const DB_DBNAME = process.env.DB_DBNAME || "react_ecommerce";
 
 const app = express();
 
@@ -10,10 +14,10 @@ app.use(express.json());
 app.use(cors());
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "react_ecommerce",
+  host: DB_HOST,
+  user: DB_USERNAME,
+  password: DB_PASSWORD,
+  database: DB_DBNAME,
 });
 
 connection.connect((error) => {
