@@ -31,7 +31,7 @@ function BuyPage() {
         <div className="plant md:px-12 px-5 flex flex-col justify-center gap-10">
           <ul className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {loading ? (
-              <p>Chargement en cours</p>
+<p>Chargement en cours ! Ne partez pas, attendez on est bon dans moins 5 minutes s'il vous plaît.</p>
             ) : (
               products.map((product, index) => (
                 <Link
